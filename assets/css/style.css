@@ -12,6 +12,14 @@ header {
     width: 100%;
 }
 
+header h1 {
+    display: inline-flex;
+    justify-content: left;
+    font-size: 36px;
+    position: relative;
+    bottom: 10px;
+} 
+
 header img {
     display: inline-block;
     height: 75px;
@@ -20,14 +28,6 @@ header img {
     position: relative;
     top: 12px;
 }
-
-header h1 {
-    display: inline-block;
-    justify-content: left;
-    font-size: 36px;
-    position: relative;
-    bottom: 10px;
-} 
 
 header h1 a{
     color: rgb(252, 249, 249);
@@ -38,7 +38,6 @@ header nav {
     float: right;
     position: relative;
     top: 32.8px;
-
 }
 
 header nav ul {
@@ -73,4 +72,16 @@ header nav ul li a {
     background-image: url(./artiom-vallat-rU_BvpGC8nQ-unsplash.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+    repeat (12, 1fr);
+}
+
+main section {
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
