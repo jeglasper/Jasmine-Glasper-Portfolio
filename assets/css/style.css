@@ -4,6 +4,10 @@
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     color: rgb(252, 249, 249);
     background-color: rgb(62, 2, 88);
     position: sticky;
@@ -12,7 +16,19 @@ header {
     width: 100%;
 }
 
-header img {
+header div {
+    display: inline-block;
+}
+
+header div h1 {
+    display: inline-flex;
+    justify-content: left;
+    font-size: 36px;
+    position: relative;
+    bottom: 10px;
+} 
+
+header div img {
     display: inline-block;
     height: 75px;
     width: 110px;
@@ -21,15 +37,7 @@ header img {
     top: 12px;
 }
 
-header h1 {
-    display: inline-block;
-    justify-content: left;
-    font-size: 36px;
-    position: relative;
-    bottom: 10px;
-} 
-
-header h1 a{
+header div h1 a{
     color: rgb(252, 249, 249);
     text-decoration: none;
 }
@@ -38,7 +46,6 @@ header nav {
     float: right;
     position: relative;
     top: 32.8px;
-
 }
 
 header nav ul {
@@ -49,7 +56,7 @@ header nav ul li{
     display: inline-flex;
     margin: 20px;
     position: relative;
-    bottom: 30px;
+    bottom: 35px;
 }
 
 header h1:hover,
@@ -60,7 +67,7 @@ header nav ul li:hover {
 header nav ul li a {
     color: rgb(252, 249, 249);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
     padding: 10px;
     margin: 50 px;
     border-bottom: 4px solid rgb(252, 249, 249);
@@ -73,4 +80,61 @@ header nav ul li a {
     background-image: url(./artiom-vallat-rU_BvpGC8nQ-unsplash.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+    repeat (12, 1fr);
+}
+
+main section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.My-Info {
+    display: flex;
+    flex-direction: row;
+}
+
+main h3 {
+    width: 20%;
+    padding-right: 20px;
+    color: rgb(62, 2, 88);
+    font-size: 40px;
+    border-right: 5px dotted rgb(62, 2, 88);
+    text-align: right;
+}
+
+section div {
+    width: 70%;
+    margin-left: 2%;
+    margin-right: 5%;
+}
+
+p {
+    line-height: 110%;
+    margin-bottom: 15px;
+}
+
+section ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 2%;
+    margin-right: 5%;
+
+}
+
+section ul a {
+    color: rgb(62, 2, 88);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 50 px;
+    border-bottom: 4px solid rgb(62, 2, 88);
 }
