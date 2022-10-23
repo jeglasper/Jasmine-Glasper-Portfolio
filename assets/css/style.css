@@ -14,27 +14,28 @@ header {
     top: 0px;
     min-height: 100px;
     width: 100%;
+    /* align-content: center; */
 }
 
 header div {
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 header div h1 {
-    display: inline-flex;
-    justify-content: left;
+    /* display: inline-block; */
+    /* font-size: 36px; */
+    /* position: relative;
+    bottom: 14px; */
     font-size: 36px;
-    position: relative;
-    bottom: 10px;
 } 
 
 header div img {
-    display: inline-block;
+    /* display: inline-block; */
     height: 75px;
     width: 110px;
-    justify-content: left;
-    position: relative;
-    top: 12px;
+    /* position: relative;
+    top: 5px; */
 }
 
 header div h1 a{
@@ -43,9 +44,11 @@ header div h1 a{
 }
 
 header nav {
-    float: right;
-    position: relative;
-    top: 32.8px;
+    /* float: right; */
+    /* position: relative;
+    top: 32.8px; */
+    /* display: inline-flex; */
+    /* align-items: center; */
 }
 
 header nav ul {
@@ -54,9 +57,10 @@ header nav ul {
 
 header nav ul li{
     display: inline-flex;
+    /* align-content: center; */
     margin: 20px;
-    position: relative;
-    bottom: 35px;
+    /* position: relative;
+    bottom: 5px; */
 }
 
 header h1:hover,
@@ -69,7 +73,6 @@ header nav ul li a {
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
-    margin: 50 px;
     border-bottom: 4px solid rgb(252, 249, 249);
 
 }
@@ -82,6 +85,7 @@ header nav ul li a {
     background-position: center;
 }
 
+/* Grid Structure for Body */
 .grid {
     display: grid;
     width: 100%;
@@ -89,16 +93,22 @@ header nav ul li a {
     repeat (12, 1fr);
 }
 
+
 main section {
     margin-top: 20px;
     margin-bottom: 20px;
+    flex: 0 0 70%;
+
 }
 
+/*Create Flex Rows for Each Section */
 .My-Info {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
+/*Establish Grid Position & Styling for Section Titles */
 main h3 {
     width: 20%;
     padding-right: 20px;
@@ -106,12 +116,14 @@ main h3 {
     font-size: 40px;
     border-right: 5px dotted rgb(62, 2, 88);
     text-align: right;
+    flex: 0 0 20%;
 }
 
+/*About Me Section Content Styling & Grid Position */
 section div {
-    width: 70%;
+    /* width: 70%;
     margin-left: 2%;
-    margin-right: 5%;
+    margin-right: 5%; */
 }
 
 p {
@@ -119,7 +131,88 @@ p {
     margin-bottom: 15px;
 }
 
-section ul {
+.Work-Product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-card {
+    /* width: 27.5%; */
+    background-color: rgb(62, 2, 88);
+    /* float: right; */
+    border: 10px solid rgb(53, 243, 50);
+    margin: 20px;
+    margin-right: 5%;
+}
+
+.project-card:hover {
+    
+}
+
+#first-assign {
+    background-image: url("../images/akos-nemes-H32zxa6YPAE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+#second-assign {
+    background-image: url("../images/jackson-hayes-JdlIfpb9dgM-unsplash.jpg") ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    flex: 0 0 45%;
+}
+#third-assign {
+    background-image: url("../images/jackson-hayes-JdlIfpb9dgM-unsplash.jpg") ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    flex: 0 0 45%;
+}
+#second-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Project Card Styling & Grid Position*/
+/*
+.project-card img {
+    width: 100%;
+    height: 100%;
+}
+
+#first-assign {
+    width: 70%;
+    height: 450px;
+    border: 10px solid rgb(53, 243, 50);
+    margin-right: 5%;;
+}
+
+.project-card {
+    width: 27.5%;
+    background-color: rgb(62, 2, 88);
+    float: right;
+    border: 10px solid rgb(53, 243, 50);
+    margin: 20px;
+    margin-right: 5%;
+}
+
+.project-title {
+    background-color: rgb(236, 53, 53);
+    color: rgb(62, 2, 88);
+*/
+/*Contact Me Section Styling & Grid Position*/
+
+main section ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -130,11 +223,50 @@ section ul {
 
 }
 
-section ul a {
+main section ul a {
     color: rgb(62, 2, 88);
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
     margin: 50 px;
-    border-bottom: 4px solid rgb(62, 2, 88);
+    font-weight: bolder;
+}
+
+main section ul a:hover {
+    text-shadow: 0px 0px 5px rgb(242, 245, 43);
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-content: center;
+    } 
+    
+    header div, header nav li {
+        display: inline-flex;
+        justify-content: center;
+    }  
+}
+
+@media screen and (max-width: 620px) {
+    header {
+        position: static;
+    }
+    header div {
+        display: inline-block;
+    }
+
+    header div img {
+        position: relative;
+        left: 85px
+    }
+
+    header nav ul li {
+        display: list-item ;
+        text-align: center;
+    }
+    header nav {
+        margin: 50px;
+    }
+
 }
