@@ -17,6 +17,7 @@ header {
     z-index: 4;
 }
 
+/*Header - Layout & Styling*/
 header div {
     display: flex;
     align-items: center;
@@ -45,11 +46,13 @@ header nav ul li{
     margin: 20px;
 }
 
+/*Glow Effect for Nav*/
 header h1:hover,
 header nav ul li:hover {
     text-shadow: 0px 0px 5px rgb(242, 245, 43);
 }
 
+/*Nav Hyperlinks Styling */
 header nav ul li a {
     color: rgb(252, 249, 249);
     text-decoration: none;
@@ -59,6 +62,7 @@ header nav ul li a {
 
 }
 
+/*Header - Cover Photo*/
 .header-image {
     height: 180px;
     width: 100%;
@@ -67,6 +71,7 @@ header nav ul li a {
     background-position: center;
 }
 
+/*Header Subtitle*/
 .header-image p {
     color: rgb(252, 249, 249);
     float: right;
@@ -88,10 +93,12 @@ header nav ul li a {
     repeat (12, 1fr);
 }
 
+/*Add Space between header and page content*/
 main {
     margin-top: 20px;
 }
 
+/*Add Space & Flex Grid Guidelines for Sections */
 main section {
     margin-bottom: 30px;
     flex: 0 0 80%;
@@ -128,6 +135,7 @@ p {
     margin-bottom: 15px;
 }
     
+/*Create Flexbox for Project Cards*/
 .Work-Product {
     display: flex;
     flex-direction: row;
@@ -141,6 +149,7 @@ p {
     height: 100px;
 }
 
+/*Differentiate Styling for 1st Project Card*/
 #first-assign {
     width: 87%;
     height: 300px;
@@ -150,6 +159,7 @@ p {
     height: 280px;
 }
 
+/* Grid Layout & Styling for Other Project Cards*/
 .project-card {
     width: 40%;
     background-color: rgb(62, 2, 88);
@@ -173,12 +183,13 @@ p {
     font-size: 20px;
 }
 
+/*Highlights Project Cards When Hovering*/
 .project-card:hover {
     opacity: 0.7;
 }
-    
-/*Contact Me Section Styling & Grid Position*/
 
+
+/*flexbox for Contact Information*/
 main section ul {
     display: flex;
     flex-direction: row;
@@ -189,7 +200,7 @@ main section ul {
     margin-right: 5%;
 
 }
-
+/*Contact Information Styling */
 main section ul a {
     color: rgb(62, 2, 88);
     text-decoration: none;
@@ -199,10 +210,13 @@ main section ul a {
     font-weight: bolder;
 }
 
+/*Glow Effect for Contact Info on Hover*/
 main section ul a:hover {
     text-shadow: 0px 10px 10px rgb(242, 245, 43);
 }
 
+
+/*Layout Adjustments for widths 651-992px*/
 @media screen and (max-width: 992px) {
     header {
         flex-direction: column;
@@ -215,6 +229,7 @@ main section ul a:hover {
     }  
 }
 
+/*Layout Adjustments for widths<651px*/
 @media screen and (max-width: 650px) {
     header div {
         display: inline-block;
