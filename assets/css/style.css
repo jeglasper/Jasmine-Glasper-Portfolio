@@ -80,7 +80,7 @@ header nav ul li a {
 .header-image {
     height: 180px;
     width: 100%;
-    background-image: url(./artiom-vallat-rU_BvpGC8nQ-unsplash.jpg);
+    background-image: url(../images/artiom-vallat-rU_BvpGC8nQ-unsplash.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -121,9 +121,9 @@ main h3 {
 
 /*About Me Section Content Styling & Grid Position */
 section div {
-    /* width: 70%;
+    width: 70%;
     margin-left: 2%;
-    margin-right: 5%; */
+    margin-right: 5%;
 }
 
 p {
