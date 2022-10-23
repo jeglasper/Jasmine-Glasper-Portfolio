@@ -10,12 +10,11 @@ header {
     justify-content: space-between;
     color: rgb(252, 249, 249);
     background-color: rgb(62, 2, 88);
-    /* position: sticky;
-    top: 0px; */
+    position: sticky;
+    top: 0px;
     min-height: 100px;
     width: 100%;
     z-index: 4;
-    /* align-content: center; */
 }
 
 header div {
@@ -24,32 +23,17 @@ header div {
 }
 
 header div h1 {
-    /* display: inline-block; */
-    /* font-size: 36px; */
-    /* position: relative;
-    bottom: 14px; */
     font-size: 36px;
 } 
 
 header div img {
-    /* display: inline-block; */
     height: 75px;
     width: 110px;
-    /* position: relative;
-    top: 5px; */
 }
 
 header div h1 a{
     color: rgb(252, 249, 249);
     text-decoration: none;
-}
-
-header nav {
-    /* float: right; */
-    /* position: relative;
-    top: 32.8px; */
-    /* display: inline-flex; */
-    /* align-items: center; */
 }
 
 header nav ul {
@@ -58,10 +42,7 @@ header nav ul {
 
 header nav ul li{
     display: inline-flex;
-    /* align-content: center; */
     margin: 20px;
-    /* position: relative;
-    bottom: 5px; */
 }
 
 header h1:hover,
@@ -88,14 +69,12 @@ header nav ul li a {
 
 .header-image p {
     color: rgb(252, 249, 249);
-    /* display: inline-flex; */
     float: right;
     text-align: right;
     position: relative;
     top: 80px;
     padding-right: 10px;
     font-size: 30px;
-    /* font-weight: bold; */
     width: 500px;
     background-color: rgb(237, 50, 243);
     
@@ -114,7 +93,6 @@ main {
 }
 
 main section {
-    /* margin-top: 20px; */
     margin-bottom: 30px;
     flex: 0 0 80%;
 
@@ -143,8 +121,6 @@ main h3 {
     width: 70%;
     margin-left: 5%;
     margin-right: 5%;
-    /* margin-left: 2%;
-    margin-right: ; */
 }
 
 p {
@@ -163,7 +139,6 @@ p {
 .project-card img {
     width: 100%;
     height: 100px;
-    /* z-index: 1; */
 }
 
 #first-assign {
@@ -178,11 +153,9 @@ p {
 .project-card {
     width: 40%;
     background-color: rgb(62, 2, 88);
-    /*float: right; */
     border: 10px solid rgb(237, 50, 243);
     height: 200px;
     margin: 20px 20px 20px 0;
-    /* margin-right: 5%; */
     font-size: 0px;
 
 }
@@ -194,9 +167,6 @@ p {
 .project-title {
     background-color: rgb(252, 249, 249);
     color: rgb(62, 2, 88);
-    /* display: block;
-    float: left;
-    z-index: 3; */
     display: inline-block;
     position: relative;
     bottom: 90px;
@@ -207,62 +177,6 @@ p {
     opacity: 0.7;
 }
     
-
-/* #first-assign {
-    background-image: url("../images/akos-nemes-H32zxa6YPAE-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 500px;
-}
-#second-assign {
-    background-image: url("../images/jackson-hayes-JdlIfpb9dgM-unsplash.jpg") ;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 500px;
-    flex: 0 0 45%;
-}
-#third-assign {
-    background-image: url("../images/jackson-hayes-JdlIfpb9dgM-unsplash.jpg") ;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 500px;
-    flex: 0 0 45%;
-}
-#second-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-/*Project Card Styling & Grid Position*/
-/*
-.project-card img {
-    width: 100%;
-    height: 100%;
-}
-
-#first-assign {
-    width: 70%;
-    height: 450px;
-    border: 10px solid rgb(53, 243, 50);
-    margin-right: 5%;;
-}
-
-.project-card {
-    width: 27.5%;
-    background-color: rgb(62, 2, 88);
-    float: right;
-    border: 10px solid rgb(53, 243, 50);
-    margin: 20px;
-    margin-right: 5%;
-}
-
-.project-title {
-    background-color: rgb(236, 53, 53);
-    color: rgb(62, 2, 88);
-*/
 /*Contact Me Section Styling & Grid Position*/
 
 main section ul {
@@ -286,7 +200,7 @@ main section ul a {
 }
 
 main section ul a:hover {
-    text-shadow: 0px 0px 5px rgb(242, 245, 43);
+    text-shadow: 0px 10px 10px rgb(242, 245, 43);
 }
 
 @media screen and (max-width: 992px) {
@@ -302,9 +216,6 @@ main section ul a:hover {
 }
 
 @media screen and (max-width: 650px) {
-    /* header {
-        position: static;
-    } */
     header div {
         display: inline-block;
     }
@@ -337,10 +248,7 @@ main section ul a:hover {
 
     .About-Me-P {
         width: 95%;
-        /* margin-left: 5%; */
-        /* margin-right: 5%; */
     }
-    
     
     .project-card {
         height: 120px;
