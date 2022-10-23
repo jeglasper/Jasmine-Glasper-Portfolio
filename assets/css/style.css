@@ -147,6 +147,7 @@ p {
 .project-card img {
     width: 100%;
     height: 300px;
+    z-index: 1;
 }
 
 #first-assign {
@@ -155,18 +156,26 @@ p {
 
 .project-card {
     width: 40%;
-    /* background-color: rgb(62, 2, 88);
-    float: right; */
+    background-color: rgb(62, 2, 88);
+    /*float: right; */
     border: 10px solid rgb(237, 50, 243);
+    
     margin: 20px 20px 20px 0;
     /* margin-right: 5%; */
+    font-size: 0px;
+
 }
 
 .project-title {
     background-color: rgb(252, 249, 249);
     color: rgb(62, 2, 88);
-    position: absolute;
-    bottom: 50px;
+    /* display: block;
+    float: left;
+    z-index: 3; */
+    display: inline-block;
+    position: relative;
+    bottom: 90px;
+    font-size: 20px;
 }
 
 .project-card:hover {
