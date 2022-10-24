@@ -231,6 +231,10 @@ main section ul a:hover {
 
 /*Layout Adjustments for widths<651px*/
 @media screen and (max-width: 650px) {
+    header {
+        position: static;
+    }
+    
     header div {
         display: inline-block;
     }
